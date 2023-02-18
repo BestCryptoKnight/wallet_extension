@@ -1,0 +1,63 @@
+// by: Olesa tanya 	<https://github.com/olesatanya>
+// 28/6/2022
+.select-card {
+	border-radius: 5px;
+	border: 1px solid var(--line-color);
+	padding: 1em;
+	text-align: center;
+	margin: 0.5em;
+	max-width: 400px;
+	height: 100%;
+	&:nth-child(2){
+		@media (max-width: 400px) {
+			margin-top: 1em;
+		}
+	}
+	@media (min-width: 768px) {
+		margin-top: 3em;
+	}
+}
+
+.btn-phrase{
+	outline: none;
+	border: none;
+	padding: 0.9em 1em;
+	margin: 1em;
+	min-width: 170px;
+	background: #28163630;
+	color: white;
+	border-radius: 5px;
+	font-size: 1.2em;
+	border: 1px solid #7c1c74;
+	cursor: pointer;
+	&:hover {
+		border: 1px solid rgba(196, 9, 209, 0.832);
+		background: rgba(12, 1, 24, 0.249);
+	}
+	 &.active{
+		background: rgba(12, 1, 24, 0.832);
+		border: 1px solid rgba(124, 2, 254, 0.832);
+		color: grey;
+	}
+}
+
+.input-phrase{
+	outline: none;
+	border: none;
+
+	padding: 0.7em 1em;
+	margin: 0.5em;
+	min-width: 100px;
+	min-height: 50px;
+	background: transparent;
+	color: white;
+	width: 140px;
+	border-radius: 5px;
+	margin-left: 0.5em;
+	font-size: 1.1em;
+	border: 1px dotted var(--color-modal);
+	cursor: pointer;
+	&.active{
+		border: 1px solid var(--color-yellow)
+	}
+}

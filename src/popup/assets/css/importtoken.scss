@@ -1,0 +1,68 @@
+.token-panel{
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	overflow-y: hidden;
+	max-width: 500px;
+	box-shadow: 0px 0px 114px #14002F;
+	@media (max-width: 1024px) {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		margin-top: auto;
+		margin-bottom: auto;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.header {
+		background: url(../img/back.png) #400888;
+		background-size: 100% 100%;
+		padding: 1em;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-blend-mode: darken;
+		position: relative;
+		.close-btn{
+			position: absolute;
+			top: 0.8em;
+			right: 0.8em;
+			cursor: pointer;
+			p {
+				padding-right: 0.5em;
+			}
+		}
+	}
+	.content {
+		background: #400888;
+		overflow-y: auto;
+	}
+}
+
+.alert {
+	padding: 0.5em;
+	margin: 1em;
+	border: 1px solid var(--color-pink);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+}
+
+.input-search {
+	margin: 1em;
+	position: relative;
+	span {
+		position: absolute;
+		left: 1em;
+		top: calc(50% - 10px);
+	}
+	input {
+		padding-left: 2.5em;
+	}
+}

@@ -1,0 +1,36 @@
+// by: Olesa tanya 	<https://github.com/olesatanya>
+// 28/6/2022
+.assets-panel {
+	overflow-y: auto;
+	.assets-row
+	{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		flex-direction: row;
+		align-items: center;
+		align-content: center;
+		border-bottom: 1px solid var(--line-color);
+		cursor: pointer;
+		padding: 1.5em 1em;
+		&:hover {
+			background-color: #6937aa34;
+		}
+		.token-icon {
+			width: 16px;
+			height: auto;
+			margin-right: 0.5em;
+		}
+	}
+}
+
+.connect-btn {
+	font-size: 0.7em;
+	padding: 0.2em 0.5em;
+	border-radius: 5px;
+	width: 105px;
+	cursor: pointer;
+	&:hover{
+		background-color: rgba($color: white, $alpha: 0.1);
+	}
+}

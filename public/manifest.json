@@ -1,0 +1,57 @@
+{
+	"name": "Neon Wallet",
+	"description": "chrome extension for neon wallet",
+	"version": "1.0.0",
+	"manifest_version": 3,
+	"icons": {
+		"16": "/images/icon-16.png",
+		"19": "images/icon-16.png",
+		"32": "images/icon-16.png",
+		"38": "images/icon-16.png",
+		"48": "images/icon-16.png",
+		"64": "images/icon-16.png",
+		"128": "images/icon-16.png",
+		"512": "images/icon-16.png"
+	},
+	"background": {
+		"service_worker": "background.js"
+	},
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["contentscript.js"]
+		}
+	  ],
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+			"16": "images/icon-16.png",
+			"19": "images/icon-16.png",
+			"32": "images/icon-16.png",
+			"38": "images/icon-16.png",
+			"48": "images/icon-16.png",
+			"64": "images/icon-16.png",
+			"128": "images/icon-16.png",
+			"512": "images/icon-16.png"
+		}
+	},
+	"permissions": [
+		"storage",
+		"activeTab",
+		"scripting",
+		"tabs",
+		"unlimitedStorage"
+	],
+	"commands": {
+		"_execute_browser_action": {
+				"suggested_key": "Ctrl+Shift+L",
+				"description": "Toggle dark body"
+		}
+	},
+	"web_accessible_resources": [
+		{
+		  "resources": ["injectscript.js"],
+		  "matches": ["http://*/*", "https://*/*"]
+		}
+	]
+}

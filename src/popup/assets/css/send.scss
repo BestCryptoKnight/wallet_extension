@@ -1,0 +1,137 @@
+// by: Olesa tanya 	<https://github.com/olesatanya>
+// 28/6/2022
+.send-modal, .edit-modal {
+	@media (max-width: 370px) {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		display: flex;
+		align-items: center;
+		width: 100%;
+	}
+	@media (min-width: 370px) {
+		position: fixed;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		background: radial-gradient(68.16% 114.2% at 50% 110.85%,#6b0ee47a 0,#33076d94 48.86%,#1e0440ad 66.87%,#0a0114 100%);
+	}
+	.token-panel {
+		max-width: 420px;
+		box-shadow: 0px 0px 114px #14002F;
+		color: white;
+		@media (min-width: 370px) {
+			width: 100%;
+		}
+		.content{
+			max-height: 800px;
+			min-height: 400px;
+			overflow-y: auto;
+		}
+	}
+
+	.close-btn {
+		position: absolute;
+		top: 0.5em;
+		right: 0.5em;
+		z-index: 1000;	
+		cursor: pointer;
+	}
+
+	.avartar-panel {
+		padding: 0.5em 1em 0 1em;
+		background-color: #210547;
+		text-align: center;
+		margin-left: 1em;
+		margin-right: 1em;
+		min-width: 80px;
+		border-radius: 3px;
+		p {
+			font-size: 0.8em;
+			line-height: 1em;
+			overflow: hidden;
+		}
+	}
+		
+
+	.alert {
+		padding: 0.2em;
+		margin: 1em;
+		border: 1px solid var(--color-pink);
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-content: center;
+		align-items: center;
+		border-radius: 3px;
+	}
+
+	.address-row{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: center;
+		align-content: center;
+		cursor: pointer;
+		padding: 0.5em 1em;
+		transition: 0.2s;
+		.avartar{
+			margin: 0;
+			margin-right: 1em;
+			transition: 0.2s;
+		}
+		&:hover{
+			color: var(--color-yellow);
+			.avartar {
+				border-color: aqua;
+			}
+			.hr{
+				transition: 0.2s;
+				border-color: var(--color-yellow);
+			}
+		}
+	}
+	.badge{
+		padding:0.5em 0.6em;
+		border-radius: 5px;
+		border: 1px solid var(--line-color);
+		color:white;
+		text-align: center;
+		margin: 5px;
+		width: 220px;
+		&.active {
+			border-color: var(--color-pink);
+			cursor: pointer;
+			&:hover {
+				background-color: rgba($color: #000000, $alpha: 0.1);
+			}
+		}
+	}
+	.input-value {
+		padding: 0.3em 0.5em;
+		border-radius: 3px;
+		border: none;
+		outline: none;
+		word-break: break-all;
+		background-color: transparent;
+		&:focus {
+			outline: none;
+			border: none;
+		}
+		&:hover {
+			background-color: transparent;
+			border: none;
+		}
+	}
+}

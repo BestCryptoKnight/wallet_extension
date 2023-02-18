@@ -1,0 +1,42 @@
+// by: Olesa tanya 	<https://github.com/olesatanya>
+// 28/6/2022
+.account-modal {
+    z-index: 1002;
+    height: 100%;
+    background: radial-gradient(68.16% 114.2% at 50% 110.85%,#6b0ee47a 0,#33076d94 48.86%,#1e0440ad 66.87%,#0a0114 100%);
+	@media (max-width: 370px) {
+        position: fixed;
+        top: 4.5em;
+        left: 0;
+        width: 100%;
+    }
+	@media (min-width: 370px) {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .inner-panel {
+        max-width: 500px;
+        min-height: 400px;
+        box-shadow: 0px 0px 114px #14002F;
+        height: auto;
+        color: white;
+        @media (min-width: 370px) {
+            width: 100%;
+        }
+        .header {
+        }
+        .content{
+            max-height: 800px;
+            min-height: 400px;
+            overflow-y: auto;
+        }
+    }
+}

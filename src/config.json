@@ -1,0 +1,11 @@
+{
+    "links": {
+        "privacyPolicy": "https://wallet.neonlink.io/privacy-policy",
+        "termsOfUse": "https://wallet.neonlink.io/terms-of-use",
+        "attributions": "https://wallet.neonlink.io/attributions",
+        "learnMore": "https://wallet.neonlink.io/learn-more",
+        "support": "https://neonlink.io/contact",
+        "contactUs": "https://neonlink.io/contact",
+        "swapLink":"http://dex.neonlink.io"
+    }
+}   

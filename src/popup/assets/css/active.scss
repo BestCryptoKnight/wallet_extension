@@ -1,0 +1,26 @@
+// by: Olesa tanya 	<https://github.com/olesatanya>
+// 28/6/2022
+.active-panel {
+	overflow-y: auto;
+	// height: 216px;
+	.active-row
+	{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		flex-direction: row;
+		align-items: center;
+		align-content: center;
+		border-bottom: 1px solid var(--line-color);
+		cursor: pointer;
+		padding: 1em;
+		&:hover {
+			background-color: #6937aa34;
+		}
+		.token-icon {
+			width: 16px;
+			height: auto;
+			margin-right: 0.5em;
+		}
+	}
+}
